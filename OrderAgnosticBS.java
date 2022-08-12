@@ -4,33 +4,52 @@ public class OrderAgnosticBS
 {
     public static void main(String[] args)
     {
-        int[] arr ={81,76,50,41,32,20,13};
-        int tg=20;
+        int[] arr ={3,7,9,12,19,24,28,32,38,40,43,62,89,99};
+        int tg=2;
         System.out.println(agnosticBs(arr, tg));
     }
 
     static int agnosticBs(int[] arr, int tg)
     {
         int start=0;
-        int end=arr.length;
-        if(arr.length<=0)
+        int end=arr.length-1;
+//        System.out.println(end);
+        if(arr.length==0)
         {
             return -1;
         }
-        while(start<=end)
+        if (arr[start]>arr[end])
         {
-            int mid= start+ (end-start)/2;
-            if(arr[mid]==tg)
+            while(arr[start]>=arr[end])
             {
-                return mid;
+                int mid=start+(end-start)/2;
+                if(arr[mid]==tg)
+                {
+                    return mid;
+                }
+                if(tg<arr[mid])
+                {
+                    start=mid+1;
+                }
+                else {
+                    end = mid - 1;
+                }
             }
-            else if(tg<arr[mid])
+        }
+        if (arr[start]<arr[end])
+        {
+            while(arr[start]<=arr[end])
             {
-                end=mid-1;
-            }
-            else
-            {
-                start=mid+1;
+                int mid=start+(end-start)/2;
+                if (arr[mid] == tg) {
+                    return mid;
+                }
+                if (tg < arr[mid]) {
+                    end = mid - 1;
+                }
+                else {
+                    start = mid + 1;
+                }
             }
         }
         return -1;
