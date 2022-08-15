@@ -4,8 +4,8 @@ public class BinarySearch
 {
     public static void main(String[] args)
     {
-        int[] arr={3,7,9,12,19,24,28,32,38,40,43,62,89,99};
-        int tg=32;
+        int[] arr={3,7,9,12,19,24,28,32,38,40,43,56,62,89,99};
+        int tg=45;
         System.out.println(binarySearch(arr,tg));
     }
     static int binarySearch(int[] arr, int tg)

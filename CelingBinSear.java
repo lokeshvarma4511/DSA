@@ -5,7 +5,7 @@ public class CelingBinSear
     public static void main(String[] args)
     {
         int[] arr={3,7,9,12,19,24,28,32,38,40,43,62,89,99};
-        int tg=33;
+        int tg=20;
         System.out.println(ceilSearch(arr,tg));
     }
     static int ceilSearch(int[] arr, int tg)
