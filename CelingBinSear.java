@@ -8,6 +8,7 @@ public class CelingBinSear
         int tg=20;
         System.out.println(ceilSearch(arr,tg));
     }
+    // returns the smallest number which is greater than or equal to target
     static int ceilSearch(int[] arr, int tg)
     {
         int start=0;

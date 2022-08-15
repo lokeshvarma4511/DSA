@@ -5,6 +5,7 @@ public class FloorBinSear {
         int tg=30;
         System.out.println(floorSearch(arr,tg));
     }
+    // returns the smallest number which is lesser than or equal to target
     static int floorSearch(int[]arr,int tg)
     {
         if(arr.length==0)
