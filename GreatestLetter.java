@@ -1,10 +1,9 @@
 package company.dsa;
-
 public class GreatestLetter
 {
     public static void main(String[] args) {
         char[] arr={'a','e','j','p','u','y'};
-        char tg='y';
+        char tg='p';
         System.out.println(greatBinSear(arr,tg));
     }
     static char greatBinSear(char[] arr, char tg)
