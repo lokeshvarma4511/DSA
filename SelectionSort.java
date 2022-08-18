@@ -24,5 +24,6 @@ public class SelectionSort {
     static int max(int[] arr, int start, int end)
     {
         return start;
+
     }
 }
