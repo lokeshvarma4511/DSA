@@ -45,7 +45,7 @@ public class BubbleSort{
                     bool=true;
                 }
             }
-            if(bool!=true)
+            if(!bool)
             {
                 break;
             }
