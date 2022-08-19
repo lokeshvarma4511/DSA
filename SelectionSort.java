@@ -34,6 +34,7 @@ public class SelectionSort {
     //function for finding max element in remaining array
     static int max(int[] arr,int start,int end)
     {
+
         int maxEle = Integer.MIN_VALUE;
         int maxindex=-1;
         for(int i=0;i<end;i++)
