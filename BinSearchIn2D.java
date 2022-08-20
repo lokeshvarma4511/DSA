@@ -11,6 +11,7 @@ public class BinSearchIn2D
                 {15,25,35,45},
                 {28,38,48,58},
                 {29,39,49,59}
+
         };
         int tg=79;
 
