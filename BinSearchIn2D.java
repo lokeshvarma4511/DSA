@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class BinSearchIn2D
 {
+
     public static void main(String[] args)
     {
         int[][] arr ={
