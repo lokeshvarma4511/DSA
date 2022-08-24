@@ -1,29 +1,46 @@
 package company.dsa;
+import java.util.ArrayList;
 import java.util.Arrays;
-public class CyclicSort {
-    public static void main(String[] a) {
-        int[] arr = {3, 5, 4, 1, 2};
-        System.out.println(Arrays.toString(cyclicSort(arr)));
+public class CyclicSort
+{
+    public static void main(String[] a)
+    {
+        int[] arr = {4,3,2,7,8,2,3,1};
+        System.out.println(cyclicSort(arr));
     }
-
-    static int[] cyclicSort(int[] arr) {
+    static ArrayList<Integer> cyclicSort(int[] arr)
+    {
+        ArrayList<Integer> arr2 = new ArrayList<Integer>();
         int i = 0;
+//        int[] arr2 =new int[arr.length];
         while (i < arr.length - 1)
         {
-            if (arr[i]!=i+1) {
-            //swapping
-                int a=arr[i]-1;
-                int b=arr[a];
-                int c=arr[i];
-                arr[i]=b;
-                arr[a]=c;
-            }
+            if (arr[i]!=i+1)
+            {
+                int ind=arr[arr[i]-1];
+
+                if(arr[i]==ind)
+                {
+                    arr2.add(ind);
+                    i++;
+                }
+                else
+                {
+                    //swapping
+                    int a=arr[i]-1;
+                    int b=arr[a];
+                    int c=arr[i];
+                    arr[i]=b;
+                    arr[a]=c;
+                }
+                }
             else
             {
                 i++;
             }
+
         }
-        return arr;
+        return (arr2);
     }
 }
 
