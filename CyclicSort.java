@@ -21,8 +21,6 @@ public class CyclicSort
             {
                 swap(arr,i,arr[i]-1);
              */
-
-
             //OR
             if (arr[i]!=i+1)
             {
