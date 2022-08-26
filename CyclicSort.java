@@ -13,8 +13,17 @@ public class CyclicSort
         ArrayList<Integer> arr2 = new ArrayList<Integer>();
         int i = 0;
 //        int[] arr2 =new int[arr.length];
-        while (i < arr.length - 1)
+        while (i < arr.length )
         {
+
+            /*
+            if(arr[i]!=arr[arr[i]-1]
+            {
+                swap(arr,i,arr[i]-1);
+             */
+
+
+            //OR
             if (arr[i]!=i+1)
             {
                 int ind=arr[arr[i]-1];
