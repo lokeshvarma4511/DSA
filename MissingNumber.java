@@ -7,7 +7,6 @@ public class MissingNumber {
         int[] arr = {4, 0, 1, 2};
         System.out.println(missingNumber(arr));
     }
-
     public static int missingNumber(int[] arr) {
         int i = 0;
         while (i < arr.length)
