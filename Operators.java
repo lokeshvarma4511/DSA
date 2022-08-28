@@ -28,16 +28,6 @@ public class Operators
 //        System.out.println(39+""+new ArrayList<>());
 
 
-        //Performance
-
-        String s1 = "start ";
-        for(int i=0;i<26;i++)
-        {
-            char ch = (char) ('a' + i);
-            s1+=ch;
-        }
-        s1+=" end";
-        System.out.println(s1);
 
     }
 }
