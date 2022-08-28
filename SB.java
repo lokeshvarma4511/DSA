@@ -17,7 +17,6 @@ public class SB
 //        s1+=" end";
 //        System.out.println(s1);
         StringBuilder s1=new StringBuilder();
-
         for(int i=0;i<26;i++)
         {
             char ch = (char) ('a' + i);
