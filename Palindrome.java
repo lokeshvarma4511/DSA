@@ -6,7 +6,6 @@ public class Palindrome
 {
     public static void main(String[] args) {
         String s1="a";
-        s1=s1.toLowerCase();
 //        System.out.println(s1);
         System.out.println(palindrome(s1));
     }
@@ -16,7 +15,7 @@ public class Palindrome
         str=str.toLowerCase();
         str=str.strip();
 
-        if(str.length()==0 || str==null)
+        if(str==null || str.length()==0 )
         {
             return true;
         }
