@@ -2,14 +2,13 @@ package company.dsa;
 
 import java.util.Locale;
 
-public class Palindrome
+public class PalindromeString
 {
     public static void main(String[] args) {
-        String s1="a";
+        String s1="ahtr";
 //        System.out.println(s1);
         System.out.println(palindrome(s1));
     }
-
     static boolean palindrome(String str)
     {
         str=str.toLowerCase();
@@ -33,5 +32,4 @@ public class Palindrome
         }
         return false;
     }
-
 }
