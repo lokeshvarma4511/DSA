@@ -1,4 +1,4 @@
-package company.dsa;
+package company.dsa.basics;
 public class LengthOfInteger {
     public static void main(String[] args) {
         int n=-456;

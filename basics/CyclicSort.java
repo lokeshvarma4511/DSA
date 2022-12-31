@@ -1,4 +1,4 @@
-package company.dsa;
+package company.dsa.basics;
 import java.util.ArrayList;
 import java.util.Arrays;
 public class CyclicSort

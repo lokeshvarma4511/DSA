@@ -1,4 +1,4 @@
-package company.dsa;
+package company.dsa.basics;
 
 public class IfElse {
     public static void main(String[] args) {

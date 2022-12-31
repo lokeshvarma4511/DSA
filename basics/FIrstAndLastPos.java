@@ -1,4 +1,4 @@
-package company.dsa;
+package company.dsa.basics;
 
  class FirstAndLastPos {
     public static void main(String[] args) {

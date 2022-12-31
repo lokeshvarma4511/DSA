@@ -1,4 +1,4 @@
-package company.dsa;
+package company.dsa.basics;
 public class GreatestLetter
 {
     public static void main(String[] args) {

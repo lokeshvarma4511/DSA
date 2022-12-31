@@ -1,4 +1,4 @@
-package company.dsa;
+package company.dsa.basics;
 public class FloorBinSear {
     public static void main(String[] args) {
         int[] arr={12,15,19,26,39,43,47,49,50,60,70,80};
