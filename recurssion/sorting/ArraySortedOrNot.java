@@ -1,4 +1,4 @@
-package company.dsa.recurssion;
+package company.dsa.recurssion.sorting;
 public class ArraySortedOrNot
 {
     public static void main(String[] args) {
