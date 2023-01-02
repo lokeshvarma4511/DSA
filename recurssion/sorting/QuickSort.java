@@ -27,11 +27,11 @@ public class QuickSort
 
         while(s<=e)
         {
-            while(arr[s]<=pivot)
+            while(arr[s]<pivot)
             {
                 s++;
             }
-            while(arr[e]>=pivot)
+            while(arr[e]>pivot)
             {
                 e--;
             }
