@@ -8,6 +8,7 @@ public class SetIthBit {
     }
     private static int setBit(int n, int i) {
         int temp = 1 << (i - 1);
+
         n= n | temp;
         return n;
     }
