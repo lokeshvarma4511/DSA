@@ -9,7 +9,7 @@ public class FindIthBit
     private static int ithBit(int n , int i)
     {
         i=i-1;
-        int bit= n>>i & 1;
+        int bit= n&(1 <<(i));
         return bit;
     }
 }
