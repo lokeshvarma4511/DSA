@@ -16,6 +16,7 @@ public class PowerOf2OrNot {
             if(count==1)
             {
                 System.out.println("true");
+
             }
             else
             {
