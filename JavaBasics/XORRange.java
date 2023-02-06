@@ -4,7 +4,6 @@ public class XORRange
 {
     public static void main(String[] args) {
         int a=3;
-//        System.out.println(rangeXOR(7));
 
         int b=9 ;
         // Range between a and b
