@@ -1,7 +1,8 @@
 package company.dsa.advancedconcepts.linkedlist;
 
-public class Dll
+public class DLL
 {
+     int size=0;
      private Node head;
      public void insertFirst(int data) {
 
@@ -13,6 +14,7 @@ public class Dll
                head.prev = node;
           }
           head=node;
+          size++;
      }
 
      public void insert(int data) {
@@ -30,8 +32,33 @@ public class Dll
                node.prev=last;
                last.next=node;
                node.next=null;
+               size++;
           }
+     }
+     public void insertAt(int data, int index) {
+          if (index == 0) {
+               insertFirst(data);
+          }
+          if (index == size - 1) {
+               insert(data);
+          }
+          else
+          {
+               Node node = new Node(data);
 
+               Node ind=head;
+               int i=0;
+               while(i<index-1)
+               {
+                    ind =ind.next;
+                    i++;
+               }
+               node.prev=ind;
+               node.next=ind.next;
+               ind.next.prev=node;
+               ind.next=node;
+               size++;
+          }
      }
 
 

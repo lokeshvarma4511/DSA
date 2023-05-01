@@ -22,7 +22,7 @@ public class Runner {
 
 
 //        DLL
-        Dll dl1= new Dll();
+        DLL dl1= new DLL();
 
         dl1.insertFirst(32);
 //        dl1.insertLast(7);
@@ -32,6 +32,9 @@ public class Runner {
         dl1.insertFirst(3);
         dl1.insertFirst(98);
         dl1.insert(67);
+        dl1.display();
+        System.out.println("after insert at index:");
+        dl1.insertAt(90,2);
         dl1.display();
     }
 }
