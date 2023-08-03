@@ -29,6 +29,5 @@ public class SB
         System.out.println(s1);
         s1.reverse();
         System.out.println(s1);
-
     }
 }
