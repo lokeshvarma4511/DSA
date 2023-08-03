@@ -30,10 +30,7 @@ public class LinkedList
         }
         size+=1;
     }
-
     // inserting at last with tail
-
-
     public void insertLast(int data) {
         if (tail == null) {
             insertFirst(data);
@@ -46,7 +43,6 @@ public class LinkedList
             size += 1;
         }
     }
-
     //insert at first
     public void insertFirst(int val)
     {
@@ -58,9 +54,7 @@ public class LinkedList
         }
         size+=1;
     }
-
     //inserting at a particular position
-
     public void insertAt(int data, int index) {
         if (index == 0) {
             insertFirst(data);
@@ -69,7 +63,7 @@ public class LinkedList
             insertLast(data);
         }
         Node temp=head;
-//        6   0    6     0
+//        6     0     6     0
         for (int i = 1; i <index ; i++)
         {
             temp=temp.next;
@@ -79,9 +73,7 @@ public class LinkedList
         temp.next = node;
         size++;
     }
-
     //    D        E        L        E        T        I        N        G
-
     //deleting first element
     public int deleteFirst()
     {
@@ -101,7 +93,6 @@ public class LinkedList
         if (size == 1) {
             return deleteFirst();
         }
-
         int val= tail.data;
 //        7    7   8   5  0
         Node temp = head;
@@ -116,7 +107,6 @@ public class LinkedList
         size--;
         return val;
     }
-
     //deleting at index
     public int deleteAt(int index) {
         int val;
@@ -136,15 +126,13 @@ public class LinkedList
 
         return val;
     }
-
     // F      I      N      D      I      N      G
-
     public int find(int value) {
         Node a1=head;
         int siz=-1;
         boolean found=false;
         int i=0;
-        while (i<size-1) {
+        while (i<size) {
             if (a1.data==value)
             {
                 found = true;
@@ -166,8 +154,6 @@ public class LinkedList
             return -1;
         }
     }
-
-
     //    D        I        S        P        L         A        Y
     //display
     public void display()

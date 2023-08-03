@@ -5,7 +5,6 @@ public class DLL
      int size=0;
      private Node head;
      public void insertFirst(int data) {
-
           Node node = new Node(data);
           node.next = head;
           node.prev =null;
@@ -16,7 +15,6 @@ public class DLL
           head=node;
           size++;
      }
-
      public void insert(int data) {
           Node node = new Node(data);
           node.next=null;
@@ -60,7 +58,6 @@ public class DLL
                size++;
           }
      }
-
 
      public void display() {
           Node node=head;
